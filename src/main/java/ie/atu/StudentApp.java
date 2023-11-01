@@ -6,6 +6,7 @@ class Student {
     private String email;
     private String course;
 
+
     public Student(String name) {
         this.name = name;
     }
@@ -15,7 +16,10 @@ class Student {
         this.email = email;
         this.course = course;
     }
-
+    
+    public void setName(String name){
+        this.name = name;
+    }
     public String getName() {
         return name;
     }
@@ -24,12 +28,12 @@ class Student {
         this.email = email;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
-    }
-
     public String getEmail() {
         return email;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     public String getCourse() {
@@ -46,7 +50,7 @@ public class StudentApp {
         // Student 1 is initialized using setters
         Student student1;
 
-        // Student 2 is initialized using a constructor
+        // Student 2 is initialized using a constructor for name
         Student student2;
 
         // Student 3 is initialized using a constructor
