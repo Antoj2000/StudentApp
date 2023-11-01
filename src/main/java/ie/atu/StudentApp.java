@@ -11,15 +11,13 @@ class Student {
         this.name = name;
     }
 
+    //For storing student 3s information using a constructor
     public Student(String name, String email, String course) {
         this.name = name;
         this.email = email;
         this.course = course;
     }
-    
-    public void setName(String name){
-        this.name = name;
-    }
+
     public String getName() {
         return name;
     }
@@ -57,7 +55,7 @@ public class StudentApp {
         Student student3;
 
         // Prompt the user to enter information for the first student
-        System.out.println("Enter the details for the first student:");
+        System.out.println("Enter the details for the first student");
         System.out.print("Name: ");
         String name1 = scanner.nextLine();
         System.out.print("Email: ");
@@ -71,7 +69,8 @@ public class StudentApp {
         student1.setCourse(course1);
 
         // Prompt the user to enter information for the second student using a constructor
-        System.out.println("Enter the name for the second student:");
+        System.out.println("Enter the details for the second student");
+        System.out.print("Name: ");
         String name2 = scanner.nextLine();
         System.out.print("Email: ");
         String email2 = scanner.nextLine();
@@ -82,7 +81,7 @@ public class StudentApp {
         student2 = new Student(name2, email2, course2);
 
         // Prompt the user to enter information for the third student using a constructor
-        System.out.println("Enter the details for the third student:");
+        System.out.println("Enter the details for the third student");
         System.out.print("Name: ");
         String name3 = scanner.nextLine();
         System.out.print("Email: ");
